@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="app">
+        <h1 class="nav">Quiz App</h1>
+
+        <form class='custom-form'>
+            <div class='form-group'>
+                <label for='number'>Number of Questions</label>
+                <input type='number' id='number' name='numOfQuestions'/>
+            </div>
+            <div class='form-group'>
+                <label for='category'>Select Category</label>
+                <select id='category' name='category'>
+                    <option value=''>Any category</option>
+                    <option value='9'>General Knowledge</option>
+                    <option value='10'>Entertainment : Books</option>
+                    <option value='11'>Entertainment : Film</option>
+                    <option value='12'>Entertainment : Music</option>
+                    <option value='13'>Entertainment : Musicals & Theatre</option>
+                    <option value='14'>Entertainment : Television</option>
+                    <option value='15'>Entertainment : Video Games</option>
+                    <option value='16'>Entertainment : Board Games</option>
+                    <option value='17'>Science & Nature </option>
+                    <option value='18'>Science : Computers</option>
+                    <option value='19'>Science : Mathematics</option>
+                    <option value='20'>Mythology</option>
+                    <option value='21'>Sports</option>
+                    <option value='22'>Geography</option>
+                    <option value='23'>History</option>
+                    <option value='24'>Politics</option>
+                    <option value='25'>Art</option>
+                    <option value='26'>Celebrities</option>
+                    <option value='27'>Animals</option>
+                    <option value='28'>vehicles</option>
+                    <option value='29'>Entertainment : Comics</option>
+                    <option value='30'>Science : Gagets</option>
+                    <option value='31'>Entertainment : Japanese Anime andManga</option>
+                    <option value='32'>Entertainment : Cartoon & Animation</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='difficulty'>Select Difficulty</label>
+                <select id='difficulty' name='difficulty'>
+                    <option value=''>Any Difficulty</option>
+                    <option value='easy'>Easy</option>
+                    <option value='medium'>Medium</option>
+                    <option value='hard'>Hard</option>
+                </select>
+            </div>
+            <div class='form-group'>
+                <label for='type'>Select Type</label>
+                <select id='type' name='type'>
+                    <option value=''>Any Type</option>
+                    <option value='multiple'>Multiple Choice</option>
+                    <option value='boolean'>True / false</option>
+                </select>
+            </div>
+            <button class='btn' type='submit'>Start</button>
+        </form>
+        <div class="questions-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+</html>
